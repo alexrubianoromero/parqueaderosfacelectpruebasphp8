@@ -1,0 +1,193 @@
+que no se pueda imgresar la misma placa a parking si ya esta creada y con estado 0
+
+*definir tipo de tarifa al ingreso de vehbiculo 
+*que salgan solo las tarifas de este parqueadero 
+*ppor defewcto debe traer la tarifa normal para  el tipo de vehiculo
+* colocar modulo de cambiar clave
+*revisar porque no muestra el alert cuando el usuario o la clave no coiciden (ya sale)
+*cada parqueadero tiene su propio contador de recibos 
+
+
+
+el sistema debe controlar la sesion y si no hay id_usuario debe salir del programa y 
+no permitir ninguna accion
+informes de entradas por dia  cuanto en efectivo cuanto en nequi 
+
+
+y que al cobrar tambien se mestren las diferentes tarifas pero seleccionada la que trae de la base
+generar el recibo de caja del pago 
+*tambien crear el ticket de entrada y el ticket de salida 
+
+*luego el informe de ocupacion
+*cuadrar que muestre el valor a devolver cuando se esta liquidando un vehiculo 
+*se podria hacer que cuando escoja el tipo de vehiculo de una vez coloque la tarifa  por defecto para ese tipo de vehiculo 
+*crear la tabla y el modelo de empresa 
+*hacer que se grabe tambien como se pago y cuanto se devolvio en facturar salida
+*la hora de salida no esta registrandose en parking actualizarla con base en la hora del recibo de caja
+*revisar la forma como liquida las tarifas especielmente cuando solo son segundos 
+*grabar tambien el tiempo que se va a cobrar 
+*colocar la opcion de cambio de clave 
+
+
+mirar como voy a manejar los colores con estilos en el desarollo
+
+cuando se escoja el tipo de vvehiculo de una vez colocar foco en la placa 
+volar el menu superior
+
+
+al registrar un vehiculo deberia mostrar de una vez ventana con el ticket
+
+verificar que no permita hacer ninguna accion en en controlador si no  hay sesion de usuario o si no existe id_usuario 
+o id_usuario esta en blanco 
+
+reducir el alto de las filas que muestran los vehiculos en parking y el boton tambien
+
+
+
+revisar que cuando se realice salida de un vehiculo actualice los valores en la pantalla de parking
+
+despues de registrar un vechiculol debe limpiar las casillas correspondientes a placa tarifa y tipo 
+
+
+
+-como imprimir el ticket  se debe generar cuando se dice facturar cuadrar la pagina que se va a imprimir
+
+verificar que aveces no muestra el vehiculo que se acaba de ingresar en la parte de vehiculos 
+seria bueno un control para que no deje grabar si las vueltas son negativas
+verificar como se va a manejar lo de los convenios
+colocar un logo al inicio de creciente parkin (pedir un logo sin fondo)
+agrandar los numeros un poco para ingresar la placa 
+*revisar boton de usuario nuevo cambiar color
+*en movimientos de parqueadero mostrar hora de salida 
+*que se puedan volver a ver o imprimir el recibo generado para un vehiculo
+
+
+
+
+revisar el tema de los perfiles 
+donde iniciamos 
+imagen de grupo creciente sin fondo 
+
+
+reunion 15-03-2024
+
+perfiles seran 
+operario 
+administrador
+
+*datos adicionales de parqueaderos telefono  correo electronico
+
+por cada parqueadero
+casilla con iva (persona natural o regimen comun)
+consecutivo de facturacion
+foto de una ticket con resolucion
+
+operador manejo de parking
+puede ver informes de parkeadero pero no puede modificar 
+que siempre  genere la factura 
+informe de dia 
+carros en el patio
+opcion de consultar por mes 
+
+trazabilidad de operaciones 
+con envio de correo 
+
+bicicletas 
+se reciben con cedula
+10 minuto
+
+
+siempre almacenar la placa en mayuscula
+verificar que solo muestre las tarifas de motos
+
+que redondee al 100 mas cercano 
+
+cada parqueadero maneja su propio formato de ti
+
+cada parqueadero tiene su propio consecutivo 
+cad parqueadero maneja su numero de poliza
+
+revision de los tickets de cada parqueadero
+
+
+la ruta que indica cuando ingreso a parking.php desde el menu principal 
+osea cuando ingreso desde inicio.js
+
+opciones de eliminar en los modulos
+
+la imagen de grupo creciente 
+revisar porque no funciona boton nueva tarifa 
+la placa siempre debe ser grabada en mayuscula
+
+verificar porque no mostro la placa cuando se ingreso 
+mirar simas bien ca<rgo otra vez toda la pantallaque es lo que hace infoaparking 
+o coloco un settime para que demore un poco la funcion
+
+revisar como se debe cobrar cuando es una tarifa ce convenio o especial 
+ tarifas gran america 
+
+ minuto moto  
+ minuto carros
+ minuto bicicleta
+ tarifa especial 
+
+
+revisar la forma como se esta haciendo la liquidacion de parqueadero  
+revisar que la hora y fecha la traiga en el momento que se hace click en la placa a facturar y esta fecha
+y hora seran las que se llevaran a la base de datos 
+revisar imagen 
+que se pueda modificar la placa de un vehiculo ingresado pero solo por perfil administrador 
+revisar lo de crear parqueaderos con iva 
+
+redondeo mas cercano  a las centesimas 
+cuadrar el ticket e entrada para granAmerica 
+cuadrar la casilla para que puedan colocar el valor redondeado 
+
+y cuadrar los tickets de parqueadero que enviaron 
+
+o habilitar la casilla para que redondeen
+
+alinear valor en la columna de movimientos 
+colocar la funcionalidad que si la placa termina en letra entonces la clasifique como moto
+
+*verificar la funcionalidad de corregir la placa 
+*trazabilidad cuando se cambie una placa 
+
+*crear las tarifas del rosario
+*crear la tabla para manejo de iva 
+---------------------------------------------------
+
+actualizar tabla parqueaderos de produccion 
+crear los tickets del rosario
+creacion de nuevos campos en la tabla recibos de caja para manejo del iva 
+agregar valorsiniva  porcentajeiva y valoriva 
+
+revisar el valor que se debe mostrar en los tickes tengan iva o no se debe mostrar la suma final 
+osea si no manejan iva pues olo el valor final pero si manejan iva se mostraran los valores adicionales 
+Solo se aproxima el valor total despues de sumar iva a la centena mas cercana
+
+crear la opcion para modificar los valores de un vehiculo retirado 
+solo para Andres Yazmin o johan
+
+revisar el cobro de los dias entre diferentes fechas 
+
+-crear la funcionalidad de actualizar el parqueadero de un usuario 
+que en algun lado salga el usuario perfil y el parqueadero al cual esta ligado 
+colocar el campo de clave com password
+
+seria buano permitir que un administrador pueda vambiar la tarifa de un vehiculo en parking 
+
+
+se debe crear la tarifa plena en los otros parqueadero
+
+campo 	nofacturaconiva varchar(50) en la tabla de parqueaderos
+
+//o dejar normales los convenios que cojan los mismos numeros y ya si algo despues se pueden cambiar 
+
+
+revisar como esta cobrando la tafifa plena en gran america
+
+
+
+
+
